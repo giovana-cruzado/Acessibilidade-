@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Navegação Acessível</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#conteudo" acesskey="c">Ir para o conteúdo [Alt + C]</a>
+        <a href="#sobre" accesskey="s">Ir para Sobre [Alt + S]</a>
+    </nav>
+
+    <main id="conteudo" tabindex="-1">
+        <h1>Bem-vindo!</h1>
+        <p>Este site permite navegação por teclado e usa destaque de foco para acessibilidade.</p>
+        <button onclick="alert('Você clicou em um botão acessível!')">Clique acessível</button>
+    </main>
+
+    <section id="sobre" tabindex="-1">
+        <h2>Sobre</h2>
+        <p>Esta seção mostra como destacar o foco do teclado e usar atalhos de acesso.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
